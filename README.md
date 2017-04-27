@@ -27,6 +27,6 @@ The following dependencies are required for this plugin:
 
 ## License
 
-	This plugin is released under a MIT] license.
+This plugin is released under a [MIT](LICENSE) license.
 
 
