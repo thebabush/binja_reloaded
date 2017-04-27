@@ -1,0 +1,25 @@
+{
+  "plugin": {
+    "name": "Binja Reloaded",
+    "type": ["core"],
+    "api": "python2",
+    "description": "Automatically reload plugin files when they are changed.",
+    "longdescription": "Simple plugin to reload binja plugin files when they change. Coded because I was tired of restarting binja (non-commercial version) to play with its API.",
+    "license": {
+      "name": "MIT",
+      "text": ""
+    },
+    "dependencies": {
+      "pip": ["watchdog"],
+      "apt": [],
+      "installers": [],
+      "other": []
+    },
+    "version": "0.1 alpha",
+    "author": "Paolo Montesel (github.com/kenoph)",
+    "minimumBinaryNinjaVersion": {
+      "dev": "1.0.dev-576",
+      "release": "9999"
+    }
+  }
+}
