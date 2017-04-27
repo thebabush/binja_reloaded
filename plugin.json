@@ -7,7 +7,7 @@
     "longdescription": "Simple plugin to reload binja plugin files when they change. Coded because I was tired of restarting binja (non-commercial version) to play with its API.",
     "license": {
       "name": "MIT",
-      "text": ""
+      "text": "https://raw.githubusercontent.com/kenoph/binja-reloaded/master/LICENSE"
     },
     "dependencies": {
       "pip": ["watchdog"],
