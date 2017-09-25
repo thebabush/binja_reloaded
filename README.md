@@ -1,4 +1,4 @@
-# Binja Reloaded (v0.1 alpha)
+# Binja Reloaded (v0.1.1 alpha)
 Author: **Paolo Montesel (github.com/kenoph)**
 
 _Automatically reload plugin files when they are changed._

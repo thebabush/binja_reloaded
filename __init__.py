@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 import watchdog.observers
 import watchdog.events
@@ -33,24 +34,23 @@ class PluginHandler(watchdog.events.PatternMatchingEventHandler):
         if mod_path[-1] == '__init__':
             mod_path.pop()
         elif mod_path[0] == __name__:
-            print 'reloaded> Not reloading myself :/'
+            print('reloaded> Not reloading myself :/')
             return
 
-        #for i in range(len(mod_path)):
+        # for i in range(len(mod_path)):
         for i in [len(mod_path)-1]:
             mod_name = '.'.join(mod_path[:len(mod_path)-i])
 
             if mod_name in sys.modules:
-                print 'reloaded> Reloading "{}"...'.format(mod_name)
+                print('reloaded> Reloading "{}"...'.format(mod_name))
                 try:
                     reload(sys.modules[mod_name])
                 except Exception as e:
-                    print e
+                    print(e)
             else:
-                print 'reloaded> Not reloading "{}"..'.format(mod_name)
+                print('reloaded> Not reloading "{}"..'.format(mod_name))
 
 
 observer = watchdog.observers.Observer()
 observer.schedule(PluginHandler(), plugin_dir, recursive=True)
 observer.start()
-
