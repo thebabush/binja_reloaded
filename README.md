@@ -7,6 +7,10 @@ _Automatically reload plugin files when they are changed._
 
 Simple plugin to reload binja plugin files when they change. Coded because I was tired of restarting binja (non-commercial version) to play with its API.
 
+## Limitations:
+
+`watchdog` does not support symlinks as of now, so you should develop your plugins in `~/.binaryninja/plugins/` instead of symlinking from a saner path.
+
 ## Minimum Version
 
 This plugin requires the following minimum version of Binary Ninja:
